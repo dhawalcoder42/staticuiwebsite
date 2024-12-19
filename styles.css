@@ -1,0 +1,195 @@
+/* General Reset */
+/*with description*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+  font-family: Arial, sans-serif; /* Setting the default font */
+  background-color: #fdfdfd; /* Light background color */
+  color: #333; /* Default text color */
+  display: flex;
+  flex-direction: column; /* Arranges content in a column */
+  align-items: center; /* Centers content horizontally */
+}
+
+/* Header */
+.header {
+  text-align: center; /* Centers text */
+  margin: 10px 0; /* Adds space above and below */
+}
+
+.header h1 {
+  color: #2b822b; /* Green color for the main heading */
+  font-size: 1.8rem; /* Medium font size for the heading */
+}
+
+.header p {
+  color: #666; /* Lighter color for subtext */
+  font-size: 0.75rem; /* Smaller font size for paragraph */
+  margin-top: 5px; /* Adds a small margin on top */
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  justify-content: space-between; /* Aligns content with space between */
+  align-items: center; /* Centers content vertically */
+  max-width: 1200px; /* Limits maximum container width */
+  width: 100%; /* Full width */
+  padding: 20px; /* Padding around the container */
+}
+
+/* Left Content */
+.left-content {
+  position: absolute;
+  left: 100px; /* Positions content to the left */
+  top: 50%; /* Vertically centers the content */
+  transform: translateY(-50%); /* Fine-tunes vertical centering */
+  max-width: 400px; /* Limits width of the left content */
+}
+
+.left-content h2 {
+  font-size: 4rem; /* Large font size for emphasis */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 20px; /* Adds space below the heading */
+  line-height: 1.2; /* Adjusts line height for readability */
+}
+
+.left-content h2 span {
+  color: #2b822b; /* Green color for specific text */
+  font-size: 4.5rem; /* Slightly larger font for emphasis */
+  font-weight: bold; /* Bold font for the "Premium" text */
+}
+
+.left-content h2 .small-text {
+  font-size: 1.8rem; /* Smaller text for additional details */
+  font-weight: normal; /* Normal font weight */
+  display: block; /* Makes the text appear on a new line */
+  margin-top: 5px; /* Adds space above the text */
+  color: #000000; /* Black color for small text */
+}
+
+.get-started {
+  background-color: #2b822b; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding around the button */
+  cursor: pointer; /* Shows pointer on hover */
+  font-size: 1rem; /* Medium font size */
+  margin-top: 10px; /* Space above the button */
+}
+
+.get-started:hover {
+  background-color: #239523; /* Darker green on hover */
+}
+
+/* Right Images Section */
+.right-images {
+  position: relative;
+  right: -705px; /* Moves the images to the right */
+  top: 50px; /* Moves the images down a bit */
+}
+
+.image-stack {
+  position: relative;
+  width: 300px; /* Sets width of the image stack */
+}
+
+.photo {
+  width: 100%; /* Makes the photo fill the width */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+  position: absolute; /* Positions the photos on top of each other */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Tilted Card Styles */
+.card-top {
+  z-index: 3; /* Ensures this card is on top */
+  transform: rotate(-1deg); /* Slight tilt to the left */
+}
+
+.card-middle {
+  z-index: 2; /* Below the top card */
+  transform: rotate(25deg); /* Large tilt to the right */
+  top: 20px; /* Moves the card slightly down */
+  left: 90px; /* Moves the card to the right */
+}
+
+.card-bottom {
+  z-index: 1; /* Bottom-most card */
+  transform: rotate(5deg); /* Slight tilt to the right */
+  top: 10px; /* Moves it a bit lower */
+  left: 170px; /* Moves it further to the right */
+}
+
+/* Chat Icon Container */
+.chat-icon {
+  position: fixed;
+  bottom: 20px; /* Fixed at the bottom */
+  right: 20px; /* Fixed at the right */
+  z-index: 1000; /* Makes sure it stays on top of other content */
+}
+
+/* Icon Container */
+.icon-container {
+  position: relative;
+  width: 150px; /* Adjusts icon container size */
+  height: 150px; /* Adjusts icon container size */
+  display: flex;
+  justify-content: center; /* Centers the content */
+  align-items: center; /* Centers the content */
+}
+
+/* Logo Image */
+.chat-icon-image {
+  width: 60px; /* Sets size of the chat logo */
+  height: 60px; /* Sets size of the chat logo */
+  border-radius: 50%; /* Makes the logo circular */
+  z-index: 2; /* Keeps logo above the rotating text */
+}
+
+/* Rotating Text */
+.rotating-text {
+  position: absolute;
+  width: 100px; /* Matches the container size */
+  height: 100px; /* Matches the container size */
+  transform-origin: center; /* Rotates around the center */
+  animation: rotateText 6s linear infinite; /* Continuous smooth rotation */
+}
+
+.rotating-text text {
+  font-size: 18px; /* Makes the text large enough for rotation */
+  fill: #2b822b; /* Green color for the rotating text */
+  text-transform: uppercase; /* Makes the text uppercase */
+  font-weight: bold; /* Makes the text bold */
+}
+
+/* Rotate Text Animation */
+@keyframes rotateText {
+  0% {
+    transform: rotate(0deg); /* Starts from 0 degrees */
+  }
+  100% {
+    transform: rotate(360deg); /* Rotates 360 degrees */
+  }
+}
+
+.we-make-icon {
+  height: 4rem; /* Sets the icon size */
+  vertical-align: middle; /* Aligns the icon with the text */
+}
+
+.premium-text {
+  display: block; /* Moves text to a new line */
+  font-size: 4.5rem; /* Large font size for emphasis */
+  font-weight: bold; /* Bold text */
+  color: #2b822b; /* Green color */
+  text-align: center; /* Centers the text */
+  margin: 15px 0; /* Adds space above and below */
+}

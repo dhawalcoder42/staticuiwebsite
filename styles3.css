@@ -1,0 +1,141 @@
+/* General Styles ....leaving some descriptions*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+header h1 {
+  font-size: 15px;
+  color: #4e9459;
+  margin-bottom: 5px;
+}
+
+header h2 {
+  font-size: 50px;
+  color: #000000;
+  margin: 0;
+  font-weight: normal;
+}
+
+header .highlight {
+  color: #4e9459;
+}
+
+/* Layout Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Image and Right Container */
+.image-and-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+}
+
+.horizontal-image {
+  width: 68%;
+  max-width: 879px;
+  height: 280px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+/* Green Box */
+.green-box {
+  flex: 1;
+  background-color: #4e9459;
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 244px;
+}
+
+/* features Row */
+.features-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.feature-box {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 244px;
+}
+
+.feature-box h3 {
+  color: black;
+  margin: 10px 0;
+}
+
+.feature-box p {
+  color: #888;
+  margin: 0;
+}
+
+/* box icon */
+.box-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+/* Try Now Box */
+.try-now-box {
+  background-color: white;
+  border: 1px solid #4e9459;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.try-now-link {
+  color: #4e9459;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.try-now-link:hover {
+  color: #3b7a46;
+}

@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Pricing Title */
+.pricing-title {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #4E9459;
+    font-weight: 600;
+    margin-bottom: 127px;
+}
+
+/* Left Section Styling */
+.left-section {
+    text-align: left;
+    display: inline-block;
+    width: 48%;
+    position: relative;
+}
+
+.left-section h1 {
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: -30px;
+    color: #222;
+}
+
+.left-section .emoji {
+    font-size: 55px;
+}
+
+.price {
+    font-size: 74px;
+    color: #4E9459;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.price span {
+    font-weight: 400;
+}
+
+.underline {
+    position: absolute;
+    top: 154px;
+    left: 219px;
+    width: 308px;
+}
+
+.arrow {
+    position: absolute;
+    top: -66px;
+    left: 405px;
+    width: 197px;
+}
+
+/* Buttons */
+.button-group {
+    margin: 20px 0;
+}
+
+.get-started {
+    background-color: #4E9459;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-sales {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #7d7d7d;
+    font-size: 20px;
+    border-bottom: 1px solid #7d7d7d;
+}
+
+/* Right Section Styling */
+.right-section {
+    text-align: left;
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
+
+.right-section ul {
+    list-style: none;
+    padding-left: 80px;
+}
+
+.right-section li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #555;
+    margin: 15px 0;
+}
+
+.right-section img {
+    width: 51px;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        display: block;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .underline {
+        display: block;
+        position: relative;
+        margin: 10px auto;
+        left: 0;
+        top: 0;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
